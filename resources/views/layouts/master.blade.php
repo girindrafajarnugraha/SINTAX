@@ -589,12 +589,7 @@
             </ul>
           </div>
         </header>
-        <main class="h-full overflow-y-auto">
-          
-              
-                
-                
-        </main>
+        @yield('content');
       </div>
     </div>
   </body>
