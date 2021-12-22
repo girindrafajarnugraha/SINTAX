@@ -17,11 +17,19 @@ use Illuminate\Support\Facades\Auth;
 */
 
 Route::get('/', function () {
-    return view('pertanyaan.index');
+    return view('Dashboard.dashboard');
 });
 
 Auth::routes();
 
+
+Route::get('/Tables', function() {
+    return view('pertanyaan.index');
+});
+
+// Route::get('/Form',function()){
+//     return view('Form.form');
+// }
 
 
 Route::middleware(['auth', 'role:admin'])->group(function () {
