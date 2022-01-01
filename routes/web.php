@@ -16,8 +16,12 @@ use Illuminate\Support\Facades\Auth;
 |
 */
 
-Route::get('/', function () {
+Route::get('/dashboard', function () {
     return view('Dashboard.dashboard');
+});
+
+Route::get('/form', function () {
+    return view('form.form');
 });
 
 Auth::routes();
